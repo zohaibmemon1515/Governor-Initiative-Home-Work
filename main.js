@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import inquirer from "inquirer";
 let todos = [];
 let condition = "true";
@@ -17,8 +18,5 @@ while (condition) {
     ]);
     todos.push(todoQuestions.firstQuestion);
     console.log(todos);
-    if (todoQuestions.secondQuestion) {
-        console.log("exiting");
-        break;
-    }
+    condition = todoQuestions.secondQuestion;
 }
