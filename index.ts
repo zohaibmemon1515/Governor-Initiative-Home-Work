@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import inquirer from "inquirer"
 // const randomnumber = 13
 const randomnumber = Math.floor(Math.random()*7+1);
